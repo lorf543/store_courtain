@@ -1,0 +1,12 @@
+section{
+    padding:60px 0;
+}
+
+.img-size{
+    width: 50%;
+    height: 50%;
+    position: relative;
+    left: 25%;
+    margin: 3%;
+    
+}

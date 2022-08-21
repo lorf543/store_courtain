@@ -1,0 +1,257 @@
+
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+    <!-- navbar-->
+    {% include 'navbar.html' %}
+
+    <!--main image  & intro text-->
+<section id="intro">
+    <div class="container-lg">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-md-5 text-center text-md-start">
+                <h1>
+                    <div class="display-2">Vectcort</div>
+                    <div class="display-5 text-muted">test de algo a poner</div>
+                </h1>
+                <p class="lead my-4 text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <a href="#pricing" class="btn btn-primary btn-lg">Ajenda una cita</a>
+            </div>
+            <div class="col-md-5 text-center d-none d-md-block">
+                <img src="{%static '/images/a480e2efe8917f61f3578db7877c4caa.jpg' %}" class="img-fluid" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!--Cards-->
+<section id="pricing" class="bg-light mt-5">
+    <div class="row row-cols-1 row-cols-md-3 g-4 mx-5">
+        <div class="col">
+          <div class="card">
+            <img src="{% static 'images/roller.jpg' %}" class="card-img-top img-size" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Blacks Outs</h5>
+              <p class="card-text">blackout, bloquea la luz y la visibilidad, otorgándote mayor privacidad. Así, 
+                podrás disfrutar tus reuniones con tranquilidad sin que las personas que transitan por la calle o tus vecinos te vean..</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="{% static 'images/Scream.jpg' %}" class="card-img-top img-size" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Screen</h5>
+              <p class="card-text">La tela cuenta con una capa ultra fina de aluminio sobre el tejido screen, lo que mejora de forma comprobable su rendimiento.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="{% static 'images/zebra.jpg' %}" class="card-img-top img-size" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">conocidas sobre todo como cortinas día y noche, son un tipo de cortinas deslizantes innovadoras y estéticamente muy atractivas, 
+                diseñadas con tiras horizontales translúcidas y opacas alternadas.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="{% static 'images/ventanas-shutters.png' %}" class="card-img-top img-size" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Los shutters son persianas enrollables de aluminio con innovador diseño, que se integran perfectamente a su casa u oficina para proteger diferentes áreas como: habitaciones, puerta principal, terrazas, gazebos, entradas de vehículo, entrada de almacén, entre otras...</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="{% static 'images/kindle.png' %}" class="card-img-top img-size" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="{% static 'images/ventana_anti2.png' %}" class="card-img-top img-size" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Las mejores ventanas para aislar ruido y frío son aquellas que incluyen varios vidrios acústicos, de espesor mínimo de 6 mm y en las que su marco está fabricado con materiales aislantes como PVC o aluminio con rotura de puente térmico.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+</section>
+
+<!--Acordions-->
+<section id="topics">
+    <div class="container-md">
+        <div class="text-center">
+            <h2>Aserca de Nosotros</h2>
+            <p class="lead text-muted"> A quick glance at the topics you'll learn</p>
+        </div>
+
+
+
+        <div class="row my-5 g-5 justify-content-around align-items-center">
+            <div class="col-6 col-lg-4">
+                <img src="{% static 'images/kindle.png' %}"class="img-fluid" alt="ebook">
+            </div>
+
+            <div class="col-lg-6">
+                <div class="accordion" id="chapters">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading-1">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#chapter-1" aria-expanded="true" aria-controls="chapter-1">
+                            Mision
+                            </button>
+                        </h2>
+                        <div id="chapter-1" class="accordion-collapse collapse show" aria-labelledby="heading-1" data-bs-parent="#chapters">
+                            <div class="accordion-body">
+                            <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading-2">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#chapter-2" aria-expanded="true" aria-controls="chapter-1">
+                            Vision
+                            </button>
+                        </h2>
+                        <div id="chapter-2" class="accordion-collapse collapse" aria-labelledby="heading-1" data-bs-parent="#chapters">
+                            <div class="accordion-body">
+                            <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading-3">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#chapter-3" aria-expanded="true" aria-controls="chapter-1">
+                            Valores
+                            </button>
+                        </h2>
+                        <div id="chapter-3" class="accordion-collapse collapse" aria-labelledby="heading-1" data-bs-parent="#chapters">
+                            <div class="accordion-body">
+                            <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </div>
+</section>
+
+<!--Reviews-->
+<section id="reviews" class="bg-light">
+    <div class="container-lg">
+        <div class="text-center">
+            <h2> <i class="b bi-stars"></i>Opiniones</h2>
+            <p class="lead">Lo que nuestros clientes dicen</p>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="list-group">
+                    <div class="list-group-item py-3">
+                        <h5 class="mb-1">A must buy for every sppiring web dev</h5>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <p class="mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Sit quis rerum nesciunt reprehenderit cum vel iusto atque animi voluptatem neque,
+                            nulla perspiciatis illo eum laboriosam labore facilis dolore dolorem quisquam.
+                        </p>
+                    </div>
+                    <div class="list-group-item py-3">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-half"></i>
+                        <h5 class="mb-1">A must buy for every sppiring web dev</h5>
+                        <p class="mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Sit quis rerum nesciunt reprehenderit cum vel iusto atque animi voluptatem neque,
+                            nulla perspiciatis illo eum laboriosam labore facilis dolore dolorem quisquam.
+                        </p>
+                    </div>
+                    <div class="list-group-item py-3">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <h5 class="mb-1">A must buy for every sppiring web dev</h5>
+                        <p class="mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Sit quis rerum nesciunt reprehenderit cum vel iusto atque animi voluptatem neque,
+                            nulla perspiciatis illo eum laboriosam labore facilis dolore dolorem quisquam.
+                        </p>
+                    </div>
+                    <div class="list-group-item py-3">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-half"></i>
+                        <h5 class="mb-1">A must buy for every sppiring web dev</h5>
+                        <p class="mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Sit quis rerum nesciunt reprehenderit cum vel iusto atque animi voluptatem neque,
+                            nulla perspiciatis illo eum laboriosam labore facilis dolore dolorem quisquam.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+</section>
+
+
+<!--contact form-->
+
+<section id="contact">
+    <div class="container-lg">
+        <div class="text-center">
+            <h2>Get in Touch</h2>
+            <p class="lead">Question to aks? Fill out the form to contact me directly...</p>
+        </div>
+        <div class="row justify-content-center my-5">
+            <div class="col-lg-6">
+                <form method="post">
+                    <label for="email" class="form-label">Email Address</label>
+                    <input type="email" name="" id="email" class="form-control" placeholder="e.g mario@example.com">
+
+                    <label for="name" class="form-label">Name:</label>
+                    <input type="text" name="" id="name" class="form-control" placeholder="e.g Mario">
+
+                    <div class="mb-3">
+                        <label for="subject" class="form-label">What is your question about?</label>
+                        <select class="form-select" name="" id="subject">
+                            <option value="">Pricing query</option>
+                            <option value="">Content query</option>
+                            <option value="">Other query</option>
+                        </select>
+                    </div>
+                    <label for="query" class="form-label">Your query...</label>
+                    <textarea type="text" name="" id="name" class="form-control" rows="10" placeholder="...."></textarea>
+                    
+
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+{% endblock content %}
+
